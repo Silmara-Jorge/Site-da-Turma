@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site da Turma</title>
     <link rel="stylesheet" href="style.css">
+    <title>Site da Turma</title>
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</li></a>
+                <li><a href="#">Módulo 1</li></a>
+                <li><a href="#">Módulo 2</li></a>
+                <li><a href="#">Módulo 3</li></a>
+            </ul>
+        </div>
+        <section>
+        <img class="container" src="https://media-exp1.licdn.com/dms/image/C4E16AQG4kImPDjF95Q/profile-displaybackgroundimage-shrink_200_800/0/1651013485291?e=1657152000&v=beta&t=__T679rzqFwxAJ2B8P-39gFrNWlPzN01b3fPov0O8X4" />
+        </section>
+        <div>
+            <button onclick="darkMode()">Darkmode</button>
+        </div>
+    </header>
     <div class="pdf">
         <a target="_blank" href="pdfs/Aula 2 [17.03.22] - introdução.pdf">Aula 2 [17.03.22] - introdução</a>
         <a target="_blank" href="pdfs/Aula 3 [22.03.22] - modelos portas IP mascaras.pdf">Aula 3 [22.03.22] - modelos portas IP mascaras</a>
@@ -25,6 +42,11 @@
         <a target="_blank" href="pdfs/Aula 15 [05.05.22] - MVP lean thinking.pdf">Aula 15 [05.05.22] - MVP lean thinking </a>
 
     </div>
-        
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
